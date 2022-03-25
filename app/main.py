@@ -10,5 +10,4 @@ def greeting(name: str) -> str:
     Returns:
         str: Текст приветствия
     """
-    words = map(lambda word: word.capitalize(), name.split(' '))
-    return 'Privet, {0}!'.format(' '.join(words))
+    return 'Privet, {print_name}!'.format(print_name=name.title())
